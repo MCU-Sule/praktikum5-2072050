@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Puji Mei Indriana Sihombing 2072050">
+    <title>No 2 CSS FORM</title>
+    <a href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"></a>
+    <style>
+        body{
+            background-image: url("background.jpg");
+        }
+        .teks {
+            text-align: center;
+            color: white; 
+            padding-top: 20px;
+            padding-bottom: 25px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.8em;
+        }
+    
+        .box {
+            font-family: 'Nunito', sans-serif;
+            padding: 10px;
+            margin: 15px auto;
+            width: 400px;
+            border: 1px #ccc;
+            background-color:rgba(178, 190, 195, 0.8);
+            float: center;
+        }
+        input[type="text"], input[type="password"], input[type="date"], select {
+            margin: 9px auto;
+            width: 98%;
+            padding: 1px;
+        }
+        input[type=submit] {
+            margin-left: 6px;
+            float: center;
+            padding: 13px;
+            width: 97%;
+            border: 1px solid;
+            background: rgb(60, 179,113);
+            cursor: pointer;
+            margin-bottom: 20px;
+            margin-top: 9px;
+        }
+    </style>
+</head>
+<body>
+    <div class="teks">Fill in this form</div>
+    <div class="box">
+        <form>
+            <label for="fName">Full Name :</label>
+                <input type="text" id="fName" name="fullName">
+            <label for="email">Email :</label>
+                <input type="text" id="email" name="email">
+            <label for="age">Age :</label>
+                <input type="text" id="age" name="age">
+            <label for="gender">Gender :</label>
+                <select id="gender" name="gender">
+                    <option value="Select your gender">Select your gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            <label for="date">Date of birth :</label>
+                <input type="date" id="date" name="date">
+            <label for="laptop">Choose your laptop :</label>
+                <select id="laptop" name="laptop">
+                    <option value="laptop">Laptop</option>
+                    <option value="Asus">Asus</option>
+                    <option value="LA1">Laptop Asus A456UQ</option>
+                    <option value="LA2">Laptop Asus E410MA</option>
+                    <option value="LA3">Laptop Asus Vivobook K403FA</option>
+                    <option value="LA4">Laptop Asus BR1100CKA-GJ0410</option>
+                    <option value="Lenovo">Lenovo</option>
+                    <option value="Leno1">Laptop Lenovo ideapad S340</option>
+                    <option value="Leno2">Laptop Lenovo ideapad slim 3</option>
+                    <option value="Leno3">Laptop Lenovo Vivobook T440p</option>
+                </select>
+            <label for="cardnum">Enter your card number :</label>
+                <input type="password" id="cardnum" name="cardnum" placeholder="XXXX XXXX XXXX XXXX">
+            <label for="payment">Payment :</label>
+                <div style="margin-top: 9px; margin-bottom: 9px;"><input type="radio" id="payment" name="payment" value="1x">1x</div>
+                <div style="margin-top: 9px; margin-bottom: 9px;"><input type="radio" id="payment" name="payment" value="3x">3x</div>
+                <div style="margin-top: 9px; margin-bottom: 9px;"><input type="radio" id="payment" name="payment" value="6x">6x</div>
+                <div style="margin-top: 9px; margin-bottom: 9px;"><input type="radio" id="payment" name="payment" value="12x">12x</div>
+            <div style="margin-top: 9px; margin-bottom: 9px;"><label for="brand">Which brand do you like :</label>
+                <div style="margin-top: 9px; margin-bottom: 9px;"><input type="checkbox" id="brand" name="Asus" value="Asus">Asus</div>
+                <div style="margin-top: 9px; margin-bottom: 9px;"><input type="checkbox" id="brand" name="Lenovo" value="Lenovo">Lenovo</div>
+                <div style="margin-top: 9px; margin-bottom: 9px;"><input type="checkbox" id="brand" name="Acer" value="Acer">Acer</div>
+                <div style="margin-top: 9px; margin-bottom: 9px;"><input type="checkbox" id="brand" name="HP" value="HP">HP</div>
+            <input type="submit" value="Submit">
+    </div>
+</body>
+</html>
